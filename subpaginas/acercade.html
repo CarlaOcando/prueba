@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Acerca de</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg  p-0">
+        <a class="navbar-brand pl-5 text-light expressart" href="../index.html">EXPRESSART</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class=" navitem">
+              <a class="nav-link text-dark  p-4 px-5" href="../subpaginas/acercade.html">Acerca de  <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link text-dark p-4 px-5" href="../subpaginas/obras.html">Obras</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link text-dark p-4 px-5" href="../subpaginas/artistas.html">Artistas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+   
+</header>
+
+ <!-- IMAGEN DEL HEADER-->
+<div class="container-fluid p-0 bg-light pb-4">
+  <img src="../img/headeracerca.PNG" class="w-100">
+</div>
+
+
+ <!-- PARA QUE ES LA WEB-->
+<div class="container-fluid d-flex flex.row web pt-2 pb-5">
+  <div class="container col-lg-5 mt-3 align-self-center mr-0 text-light">
+      <p>Mi idea inicial con esta web fue <strong>poder entender y mostrar todo lo que representa el expresionismo,</strong> aunque esto pueda sonar muy sencillo requiere mucho análisis y atención al detalle, quiero que cualquier usuario que acceda a este sitio web quede <strong>impactado desde un primer momento</strong>, porque no solo se trata de ver un cuadro como si fuese cualquier dibujo aleatorio, sino conocer o interpretar la historia que hay detrás, <strong>quiero que tu que estás leyendo esto interprete la web a su propia manera</strong> ya que al final de todo, el expresionismo es subjetivo, habla de los sentimientos y plasmar algo que pueda conectar.</p>
+  </div>
+  <div class="container col-lg-4 mt-3">
+      <img src="../img/acerca1.PNG">
+  </div>
+</div>
+
+ <!-- MI OPINION-->
+ <div class="container-fluid d-flex flex.row opinion pt-2 pb-5">
+  <div class="container col-lg-3 mt-3">
+    <img src="../img/acerca2.PNG">
+</div>
+  <div class="container col-lg-5 mt-3 align-self-center text-light">
+      <p>Me parece muy interesante como el arte puede estar conectado con los sentimientos, que para muchas personas un cuadro expresionista puede ser desprolijo o tenebroso pero para un artista o alguien dispuesto a analizar la obra sabe que expresa toda una historia <br>
+      Me gusta la libertad que se trabaja en esta, rompe esos estereotipos de lo bello y perfecto para así traer a la luz aquello que muchos esconden, sus miedos o sufrimientos, aquello que los atormenta, es decir, su meta es ser más "realista", hay que tener en cuenta que este movimiento trajo consigo muchas criticas y me gusta eso, en el sentido de que cada cambio y oportunidad para diferenciarte y hacer lo que deseas puede ser juzgado, pero podemos ver como en los transcurso de los años marcó un antes y después ahora convirtiendola en un gran movimiento historico admirable afirmando el hecho de que algo sea criticado no quiere decir que sea incorrecto</p>
+  </div>
+</div>
+
+ <!-- FORMULARIO-->
+<div class="form-body py-5">
+  <div class="row d-flex justify-content-center">
+    <div class="form-holder formulario">
+      <div class="form-content">
+        <div class="form-items">
+          <h3 class="text-center text-light">Completa todos los datos</h3>
+          <p class=" text-center text-light">Y así no te perderás de nada</p>
+          <form class="requires-validation" novalidate>
+
+            <div class="col-md-12">
+              <input class="form-control" type="text" name="name" placeholder="Nombre" required>
+              <div class="valid-feedback">Su nombre es valido!</div>
+              <div class="invalid-feedback">¡El campo de nombre de usuario no puede estar en blanco!</div>
+            </div>
+
+            <div class="col-md-12">
+              <input class="form-control" type="text" name="apellido" placeholder="Apellido" required>
+              <div class="valid-feedback">¡El campo de Apellido es válido!</div>
+              <div class="invalid-feedback">El campo de Apellido no puede estar en blanco!</div>
+            </div>
+
+            <div class="col-md-12">
+              <input class="form-control" type="email" name="email" placeholder="Correo Electrónico" required>
+              <div class="valid-feedback">El campo de Email es válido!</div>
+              <div class="invalid-feedback">El campo de Email no puede estar vacio </div>
+            </div>
+
+            <div class="col-md-12">
+              <input class="form-control" type="text" name="number" placeholder="Número de Teléfono" required>
+              <div class="valid-feedback">El campo de número de teléfono es válido
+            </div>
+            </div>
+
+            <div class="form-button mt-3 d-flex justify-content-center">
+              <button id="submit" type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<footer>
+  <div class="container-fluid py-3">
+    <div class="container d-flex justify-content-center">
+      <p>Carla Ocando</p>
+    </div>
+  </div>
+</footer>
+</html>

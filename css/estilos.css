@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+/*BARRA DE NAVEGACION*/
+.nav-item {
+    padding: 0 50px;
+}
+
+/*PORTAFOLIO*/
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(94, 86, 1, 0.9);
+  }
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+  }
+  .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 1.5rem;
+  }
+  
+  .portfolio-modal .btn-close {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  
+
+  .btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+  }
+  .btn-close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  .btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(26, 188, 156, 0.25);
+    opacity: 1;
+  }
+  .btn-close:disabled, .btn-close.disabled {
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    opacity: 0.25;
+  }
+  
+  .btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+
+
+/*EMPIEZA EL CSS DE FORMULARIO*/
+
+.formulario{
+  background-color: #000000;
+
+}
+.form-content .form-items {
+  border: 3px solid #fff;
+  padding: 40px;
+  display: inline-block;
+  width: 100%;
+  min-width: 540px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.form-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+  margin-bottom: 30px;
+}
+
+.form-content p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+  color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+  width: 100%;
+  padding: 9px 20px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+
+.btn-primary{
+  background-color: #601f0f;
+  outline: none;
+  border: 0px;
+   box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+  background-color: #495056;
+  outline: none !important;
+  border: none !important;
+   box-shadow: none;
+}
+
+.form-content textarea {
+  position: static !important;
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8D8D8D;
+  outline: none;
+  resize: none;
+  height: 120px;
+  -webkit-transition: none;
+  transition: none;
+  margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+  border: 0;
+  background-color: #ebeff8;
+  color: #8D8D8D;
+}
+
+.mv-up{
+  margin-top: -9px !important;
+  margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+  color: #ff606e;
+}
+
+.valid-feedback{
+ color: #2acc80;
+}
+
+.navbar {
+  background-color: rgb(72, 11, 11);
+}
+.navitem {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.navitem a {
+  color: rgb(0, 0, 0);
+}
+.navitem :hover{
+  background-color: #000;
+}
+.navitem a:hover {
+  color: #ebeff8!important;
+}
+.expressart {
+  font-weight: 800;
+  font-size: 30px;
+  color: #fff;
+}
+
+.historia {
+  background-color:rgb(212, 178, 0);
+}
+.filosofia {
+  background-color: rgb(153, 151, 112);
+}
+.caracteristicas {
+  background-color: rgba(4, 23, 60, 0.796);
+}
+footer {
+  background-color: rgb(166, 22, 12);
+}
+.caracteristicas h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+}
+.caracteristicas h5 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.bg-negro {
+  background-color: #000;
+}
+.web {
+  background-color: rgb(28, 5, 7);
+}
+.opinion {
+  background-color: rgb(2, 21, 9);
+}
+.form-body {
+  background-color: rgb(2, 21, 9);
+}
+#obras {
+  background-color: rgb(24, 0, 0);
+}
+.caveat {
+  font-family: 'Caveat', cursive;
+}
+.caveat h2{
+  font-size: 50px;
+}
+.caveat h1{
+  font-size: 50px;
+}
+
+.artistas {
+  background-color: rgb(0, 20, 2);
+}
+.bg-amarillo {
+  background-color: rgb(97, 81, 1);
+}
+.edvard {
+  background-color: #601f0f;
+}
+.alexej {
+  background-color: #181306;
+}
+.baldomero {
+  background-color: #110401;
+}
+.bg-rojo {
+  background-color: #75210c;
+}
+.bg-gris {
+  background-color: rgb(83, 83, 83);
+}
+.bg-verde {
+  background-color: rgb(2, 21, 9);
+}
+.bg-azul {
+  background-color: rgba(4, 23, 60, 0.796);
+}
+.francisco {
+  background-color: #72725d;
+}
+.text-negro {
+  color: #000;
+}
